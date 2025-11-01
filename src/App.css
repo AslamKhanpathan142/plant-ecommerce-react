@@ -1,0 +1,140 @@
+/* .all-container{
+  width: 100%;
+  height: auto;
+} */
+
+.main-img {
+  width: 100%;
+  height: 2592px;
+  opacity: 1;
+  background-image: url('./assets/backgroundImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.headerSection {
+  display: flex;
+}
+
+.plantCard {
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+.otherSection {
+  width: 100%;
+  height: auto;
+  background: #131d0d;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .headerSection {
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .plantCard {
+    margin-left: 80px;
+  }
+  .card-Res {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .one-review {
+    margin-top: 200px;
+    margin-left: 40px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .main-img {
+    height: auto;
+    min-height: 100vh;
+  }
+  .card-Res {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .one-review {
+    margin-top: 200px;
+    margin-left: 40px;
+
+  }
+  .headerSection {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .plantCard {
+    margin-left: 0 !important;
+    margin-top: 30px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .otherSection {
+    padding: 0 16px;
+  }
+  
+  /* Plant cards grid */
+  .plant-cards-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .plant-cards-row {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px !important;
+  }
+  
+  /* Customer reviews */
+  .customer-reviews-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSection {
+    padding: 10px;
+  }
+  .card-Res {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one-review {
+    margin-top: 200px;
+    margin-left: 40px;
+
+  }
+  
+  
+  .plant-cards-row {
+    gap: 20px;
+    margin-top: 20px !important;
+  }
+  
+  .customer-reviews-container {
+    gap: 20px;
+  }
+}

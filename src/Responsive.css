@@ -1,0 +1,484 @@
+/* Responsive.css - Mobile First Responsive Styles */
+/* This file works alongside your existing CSS modules */
+
+/* Global Responsive Reset */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile First - Default styles for mobile */
+@media (max-width: 768px) {
+    /* App Layout */
+    .main-img {
+        height: auto !important;
+        min-height: 100vh;
+    }
+
+    .headerSection {
+        flex-direction: column !important;
+        padding: 20px 16px;
+    }
+
+    .plantCard {
+        margin-left: 0 !important;
+        margin-top: 30px !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .otherSection {
+        padding: 0 16px;
+    }
+
+    /* Navbar Responsive */
+    .navbar {
+        padding: 20px 16px !important;
+        flex-wrap: wrap;
+    }
+
+    .logoContainer {
+        margin-left: 0 !important;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(19, 29, 13, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem !important;
+        display: none;
+        z-index: 1000;
+    }
+
+    .navLinks.showMenu {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+
+    .icons {
+        gap: 1rem !important;
+    }
+
+    /* Hero Section & Product Section */
+    .container {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 20px auto !important;
+    }
+
+    .backgroundElement {
+        border-radius: 40px !important;
+    }
+
+    .plantImage {
+        width: 300px !important;
+        height: 300px !important;
+        top: -60px !important;
+    }
+
+    .contentSection {
+        margin-top: 260px !important;
+        margin-left: 20px !important;
+    }
+
+    /* Ronnie Testimonial */
+    .container[class*="Testimonial"] {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 20px auto !important;
+        height: auto !important;
+        padding: 20px;
+    }
+
+    .testimonial {
+        width: 100% !important;
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .testimonial br {
+        display: none;
+    }
+
+    /* Customer Reviews */
+    .container[class*="Review"] {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 20px auto !important;
+        height: auto !important;
+        padding: 20px;
+        margin-left: 0 !important;
+    }
+
+    .info {
+        margin-left: 0 !important;
+        justify-content: center;
+    }
+
+    .namerate {
+        margin-left: 15px !important;
+    }
+
+    /* Desk Decorations */
+    .card {
+        flex-direction: column !important;
+        height: auto !important;
+        margin: 20px 16px !important;
+        border-radius: 40px !important;
+        padding: 20px;
+    }
+
+    .productImage {
+        height: auto !important;
+        max-height: 400px;
+        margin-top: 0 !important;
+    }
+
+    .imageContainer {
+        order: 0 !important;
+    }
+
+    .content {
+        margin-left: 0 !important;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .description br {
+        display: none;
+    }
+
+    .Buttons {
+        justify-content: center;
+    }
+
+    /* Plant Cards Grid */
+    .plant-cards-container {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .plant-cards-row {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px !important;
+    }
+
+    .wrapper[class*="PlantCard"] {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Our Best Section */
+    .vectors {
+        margin-top: 100px !important;
+        margin-left: 0 !important;
+    }
+
+    .headline {
+        font-size: 32px !important;
+    }
+
+    .card[class*="OurBest"] {
+        flex-direction: column !important;
+        height: auto !important;
+        margin: 20px 16px !important;
+        border-radius: 40px !important;
+        padding: 20px;
+    }
+
+    .productImage[class*="OurBest"] {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        height: auto !important;
+        max-height: 400px;
+    }
+
+    .content[class*="OurBest"] {
+        width: 100% !important;
+        margin-top: 30px !important;
+        text-align: center;
+    }
+
+    .Buttons[class*="OurBest"] {
+        gap: 30px !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .description br,
+    .title br {
+        display: none;
+    }
+
+    /* Footer */
+    .footer {
+        padding-bottom: 60px !important;
+    }
+
+    .mainFooter {
+        flex-direction: column !important;
+        margin-left: 0 !important;
+        margin-top: 100px !important;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brandSection,
+    .guideSection,
+    .subscribeSection {
+        width: 100% !important;
+    }
+
+    .logoContainer {
+        justify-content: center;
+    }
+
+    .brandDescription {
+        width: 100% !important;
+        font-size: 18px !important;
+    }
+
+    .subscribeForm {
+        width: 100% !important;
+        max-width: 400px;
+        flex-direction: column;
+        height: auto !important;
+        padding: 10px;
+    }
+
+    .emailInput {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .subscribeButton {
+        width: 100% !important;
+    }
+
+    .bottomFooter {
+        flex-direction: column;
+        margin-left: 0 !important;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .socialLinks {
+        margin-right: 0 !important;
+        gap: 30px !important;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* App Layout */
+    .headerSection {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .plantCard {
+        margin-left: 0 !important;
+        margin-top: 50px !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Components */
+    .container[class*="Review"],
+    .container[class*="Testimonial"],
+    .wrapper[class*="PlantCard"] {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .plant-cards-row {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .card[class*="Desk"] {
+        flex-direction: column;
+        height: auto;
+        margin: 40px 20px !important;
+        border-radius: 80px !important;
+        padding: 40px;
+    }
+
+    .productImage[class*="Desk"] {
+        height: auto !important;
+        max-height: 500px;
+        margin-top: 0 !important;
+    }
+
+    .content[class*="Desk"] {
+        margin-left: 0 !important;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /* Footer */
+    .mainFooter {
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-left: 40px !important;
+    }
+
+    .brandSection {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .guideSection,
+    .subscribeSection {
+        width: 45% !important;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Font Size Adjustments */
+    .headline {
+        font-size: 24px !important;
+    }
+
+    .title {
+        font-size: 24px !important;
+    }
+
+    .description {
+        font-size: 16px !important;
+    }
+
+    .price {
+        font-size: 24px !important;
+    }
+
+    .name {
+        font-size: 20px !important;
+    }
+
+    /* Component Sizing */
+    .container[class*="Review"],
+    .container[class*="Testimonial"] {
+        max-width: 320px;
+        border-radius: 30px !important;
+    }
+
+    .wrapper[class*="PlantCard"] {
+        max-width: 320px;
+    }
+
+    .plantImage {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    /* Button Sizing */
+    .Buttons {
+        gap: 20px !important;
+    }
+
+    .exploreBtn {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .bag {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
+/* Large Desktop Adjustments */
+@media (min-width: 1440px) {
+    .main-img {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .headerSection {
+        justify-content: center;
+        gap: 100px;
+    }
+}
+
+/* Utility Classes for JavaScript Control */
+.responsive-hide-mobile {
+    display: block;
+}
+
+.responsive-show-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .responsive-hide-mobile {
+        display: none !important;
+    }
+
+    .responsive-show-mobile {
+        display: block !important;
+    }
+}
+
+/* Prevent Horizontal Scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Smooth Transitions */
+.container,
+.card,
+.wrapper {
+    transition: all 0.3s ease;
+}
+
+/* Focus Styles for Accessibility */
+button:focus,
+input:focus {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 2px;
+}
+
+/* High Contrast Support */
+@media (prefers-contrast: high) {
+    .backgroundElement {
+        border-color: #FFFFFF !important;
+    }
+    
+    .star {
+        color: #FFFF00 !important;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

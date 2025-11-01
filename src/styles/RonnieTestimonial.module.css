@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 409px;
+  height: 237px;
+  border-radius: 45px;
+  border-width: 1px;
+  opacity: 1;
+  color: #FFFFFF;
+  background: #FFFFFF0D;
+  border-image-source: linear-gradient(109.4deg, #FFFFFF 0%, #666666 41.42%);
+  backdrop-filter: blur(17px);
+  margin-top: 200px;
+  margin-left: 43px;
+  margin-bottom: 17px;
+}
+.info {
+  display: flex;
+  width: 233px;
+  height: 64px;
+  margin-left: 15px;
+  opacity: 1;
+
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  box-shadow: 0px 1.95px 6.11px 0px #0000001A;
+  box-shadow: 0px 5.38px 16.9px 0px #00000025;
+  box-shadow: 0px 12.96px 40.7px 0px #00000030;
+  box-shadow: 0px 43px 135px 0px #0000004A;
+  border-radius: 86px;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.namerate {
+  width: 141px;
+  height: 47px;
+  margin-left: 20px;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.stars {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+}
+
+.star {
+  font-size: 24px;
+  color: #FFF84E; 
+  position: relative;
+}
+
+.halfStar {
+  font-size: 24px;
+  color: #444; 
+  position: relative;
+}
+
+.halfStar::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%; 
+  overflow: hidden;
+  color: #FFF84E; 
+}
+
+.name {
+  width: 142px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.testimonial {
+  width: 341px;
+  height: 63px;
+  text-align: start;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  opacity: 0.75;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    width: 380px;
+    margin-left: 30px;
+  }
+  .stars {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 350px;
+    height: auto;
+    margin: 150px auto 30px;
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .testimonial {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 16px;
+    height: auto;
+  }
+  
+  .info {
+    margin-left: 0;
+    justify-content: center;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
+  
+  .star, .halfStar {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 300px;
+    margin-top: 120px;
+  }
+  
+  .avatar {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .name {
+    font-size: 18px;
+  }
+  
+  .testimonial {
+    font-size: 15px;
+  }
+  
+  .star, .halfStar {
+    font-size: 18px;
+  }
+}

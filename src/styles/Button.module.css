@@ -1,0 +1,15 @@
+.buyButton {
+    width: 217px;
+    height: 64px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    border-width: 2px;
+    opacity: 1;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFFBF;
+}

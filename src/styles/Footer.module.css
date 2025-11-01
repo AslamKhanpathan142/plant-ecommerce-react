@@ -1,0 +1,314 @@
+
+.footer {
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding-bottom: 140px;
+}
+
+.mainFooter {
+  display: flex;
+  align-items: start;
+  margin-left: 85px;
+  margin-top: 240px;
+  
+}
+
+.brandSection {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  margin-bottom: 46px;
+  width: 378px;
+  height: 94px;
+  opacity: 1;
+}
+
+.logo {
+  width: 94px;
+  height: 94px;
+  opacity: 1;
+}
+
+.brandName {
+  width: 271px;
+  height: 54px;
+  font-family: Inter;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 45px;
+  color: #FFFFFF;
+  margin-top: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  opacity: 0.75;
+}
+
+.brandDescription {
+  width: 580px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 28px;
+  color: #FFFFFF;
+  line-height: 100%;
+  letter-spacing: 0%;
+  opacity: 1;
+}
+
+.guideSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+}
+
+.sectionTitle {
+  font-family: Inter;
+  font-weight: 800;
+  font-style: Extra Bold;
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 46px;
+  opacity: 1;
+}
+
+.guideList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+}
+
+.guideItem {
+  opacity: 1;
+}
+
+.subscribeSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  width: 562px;
+  height: 74px;
+  border-radius: 8px;
+  border-width: 2px;
+  border: 2px solid #FFFFFF;
+  opacity: 1;
+}
+
+.emailInput {
+  padding: 12px 16px;
+  width: 70%;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.emailInput:focus {
+  outline: none;
+}
+
+.emailInput::placeholder {
+  width: 129px;
+  height: 29px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFFBF;
+  opacity: 1;
+}
+
+.subscribeButton {
+  width: 165.07691955566406px;
+  height: 64.8923110961914px;
+  background: #FFFFFF;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+
+
+.bottomFooter {
+  display: flex;
+  margin-top: 119px;
+  margin-left: 99px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 65px;
+  height: 34px;
+  color: #FFFFFF;
+  margin-right: 615px;
+  opacity: 1;
+}
+
+.socialIcon {
+  height: 34px;
+  font-family: Inter;
+  font-weight: 800;
+  font-style: Extra Bold;
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 100%;
+  letter-spacing: 0%;
+  opacity: 1;
+}
+
+
+.copyright {
+  height: 29px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 100%;
+  letter-spacing: 0%;
+  opacity: 1;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .mainFooter {
+    margin-left: 40px;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .brandSection {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .logoContainer {
+    justify-content: center;
+    width: auto;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 60px;
+  }
+  
+  .mainFooter {
+    margin-left: 0;
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .brandSection, .guideSection, .subscribeSection {
+    width: 100%;
+  }
+  
+  .brandDescription {
+    width: 100% !important;
+    font-size: 22px;
+  }
+  
+  .subscribeForm {
+    width: 100% !important;
+    max-width: 500px;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .emailInput {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  
+  .subscribeButton {
+    width: 100% !important;
+  }
+  
+  .bottomFooter {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .socialLinks {
+    margin-right: 0;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brandName {
+    font-size: 38px;
+  }
+ 
+  
+  .brandDescription {
+    font-size: 18px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+  }
+  
+  .guideList {
+    font-size: 20px;
+  }
+  
+  .emailInput::placeholder {
+    font-size: 20px;
+  }
+  
+  .subscribeButton {
+    font-size: 18px;
+  }
+  
+  .socialIcon {
+    font-size: 24px;
+  }
+  
+  .copyright {
+    font-size: 20px;
+  }
+}

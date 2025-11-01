@@ -1,0 +1,235 @@
+.container {
+  width: 802px;
+  height: 280px;
+  margin-left: 39px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 147px;
+}
+.content {
+  color: #FFFFFF;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.title {
+  width: 813px;
+  height: 143px;
+  opacity: 0.75;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 118px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.description {
+  width: 775px;
+  height: 56px;
+  margin-left: 51px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 23px;
+  text-align: left;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  opacity: 0.75;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 25px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.buyButton {
+  width: 217px;
+  height: 64px;
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+  border-width: 2px;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+
+.demoButton {
+  width: 70px;
+  height: 70px;
+  top: 462px;
+  left: 277px;
+  border-width: 2px;
+  border: 2px solid #FFFFFF;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.pause {
+  font-size: 34px;
+  text-align: center;
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+.live {
+  width: 140px;
+  margin-left: 20px;
+  font-family: Indie Flower;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  opacity: 1;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    width: 400px;
+    height: 550px;
+    margin-left: -50px;
+  }
+  .title {
+    width: 100%;
+    font-size: 50px;
+    text-align: start;
+  }
+  .description {
+    width: 100%;
+    margin-bottom: 130px;
+    text-align: start;
+    margin-left: -0px;
+  }
+  
+  .plantImage {
+    width: 350px;
+    height: 350px;
+    top: -90px;
+  }
+  
+  .contentSection {
+    margin-top: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 350px;
+    height: 500px;
+    margin: 50px auto;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 50px;
+    text-align: start;
+  }
+  .description {
+    width: 100%;
+    margin-bottom: 130px;
+    text-align: start;
+    margin-left: -0px;
+  }
+  
+  
+  .plantImage {
+    width: 300px;
+    height: 300px;
+    top: -70px;
+  }
+  
+  .contentSection {
+    margin-top: 250px;
+    margin-left: 20px;
+  }
+  
+  .category {
+    font-size: 32px;
+  }
+  
+  .plantName {
+    font-size: 20px;
+  }
+  
+  .price {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 300px;
+    height: 450px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 50px;
+    text-align: start;
+  }
+  .description {
+    width: 100%;
+    margin-bottom: 130px;
+    text-align: start;
+    margin-left: -0px;
+  }
+  
+  
+  .plantImage {
+    width: 250px;
+    height: 250px;
+    top: -50px;
+  }
+  
+  .contentSection {
+    margin-top: 220px;
+    margin-left: 15px;
+  }
+  
+  .category {
+    font-size: 28px;
+  }
+  
+  .plantName {
+    font-size: 18px;
+    height: auto;
+  }
+  
+  .price {
+    font-size: 28px;
+  }
+  
+  .addToCart {
+    gap: 20px;
+  }
+  
+  .exploreBtn {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  
+  .bag {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,105 @@
+
+.vectors {
+  display: flex;
+  justify-content: center;
+  height: 67px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 17px;
+  opacity: 1;
+
+}
+.vector1 {
+  position: relative;
+  width: 61.49998900294304px;
+  height: 62.99998873472214px;
+  opacity: 0.5;
+  border-bottom-left-radius: 20px;
+  margin-right: -45px;
+  overflow: hidden;
+}
+.vector1::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom-left-radius: 20px;
+  background: linear-gradient(316.11deg, #FBD300 0.4%, #FFFFFF 110.43%);
+  mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -1;
+}
+.vector2 {
+  width: 61.5px;
+  height: 63px;
+  margin-left: -45px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.vector2:before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top-right-radius: 20px;
+  background: linear-gradient(316.11deg, #FBD300 0.4%, #FFFFFF 110.43%);
+  mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -1;
+}
+.headline {
+  height: 67px;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 55px;
+  color: #FFFFFF;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  box-shadow: 0px 1.99px 1.59px 0px #00000016;
+  box-shadow: 0px 4.53px 3.62px 0px #00000020;
+  box-shadow: 0px 7.88px 6.31px 0px #00000027;
+  box-shadow: 0px 12.52px 10.02px 0px #0000002E;
+  box-shadow: 0px 19.32px 15.46px 0px #00000034;
+  box-shadow: 0px 30.15px 24.12px 0px #0000003C;
+  box-shadow: 0px 50.05px 40.04px 0px #00000046;
+  box-shadow: 0px 100px 80px 0px #0000005C;
+  opacity: 1;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .vectors {
+    margin-left: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  
+  .headline {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline {
+    font-size: 32px;
+  }
+  
+  .vector1, .vector2 {
+    width: 50px;
+    height: 50px;
+  }
+}
