@@ -1,16 +1,163 @@
-# React + Vite
+# 🌿 **FloraVision – Plant E-commerce Website**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A beautifully crafted and fully responsive **Plant E-commerce Website** built using **React.js**, offering a modern design and smooth shopping experience across all devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Live Demo**
+**Live URL:** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 **Preview**
 
-## Expanding the ESLint configuration
+| Desktop View | Mobile View |
+|---------------|--------------|
+| ![Desktop](src/assets/screenshot.png) | ![Mobile](src/assets/screeshot2.png) |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ **Features**
+
+🌿 **Responsive Design** — Perfectly optimized for all screen sizes  
+🎨 **Modern UI/UX** — Clean, intuitive, and aesthetic interface  
+📱 **Mobile-First** — Prioritizes mobile usability  
+🛒 **Product Catalog** — Explore a wide variety of plants  
+⭐ **Customer Reviews** — Real feedback to build trust  
+📧 **Newsletter Subscription** — Stay updated with latest offers  
+⚡ **Fast Performance** — Lightweight React components ensure quick loading  
+
+---
+
+## 🛠️ **Tech Stack**
+
+### **Frontend**
+- React.js 18.2.0  
+- CSS Modules  
+- React Icons
+- Tailwind CSS
+
+### **Development**
+- Create React App Using Vite 
+- Git & GitHub  
+- npm / yarn  
+
+### **Deployment**
+- Vercel
+  ```bash
+  npm run build
+  npm install -g vercel
+  vercel
+
+- Continuous Deployment
+
+---
+
+## 📦 **Installation Guide**
+
+### **Prerequisites**
+- Node.js (v14 or higher)  
+- npm or yarn  
+- Git  
+
+### **Setup Steps**
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/AslamKhanpathan142/plant-ecommerce-react.git
+cd plant-ecommerce-react
+
+# 2️⃣ Install dependencies
+npm install
+npm react icons
+# or
+yarn install
+
+# 3️⃣ Start development server
+npm start
+# or
+yarn start
+```
+---
+## 🏗️ **Project Structure**
+
+```text
+plant-ecommerce-react/
+├── public/
+│ ├── index.html
+│ └── favicon.ico
+├── src/
+│ ├── components/
+│ │ ├── Navbar.js
+│ │ ├── HeroSection.js
+│ │ ├── ProductSection.js
+│ │ ├── IndoorPlantCard.js
+│ │ ├── DeskDecorations.js
+│ │ ├── OurBest.js
+│ │ ├── CustomerReview.js
+│ │ ├── RonnieTestimonial.js
+│ │ ├── TopSellingPlants.js
+│ │ ├── Footer.js
+│ │ └── Button.js
+│ ├── styles/
+│ │ ├── App.css
+│ │ ├── Navbar.module.css
+│ │ ├── HeroSection.module.css
+│ │ ├── ProductSection.module.css
+│ │ ├── IndoorPlantCard.module.css
+│ │ ├── DeskDecorations.module.css
+│ │ ├── OurBest.module.css
+│ │ ├── CustomerReview.module.css
+│ │ ├── RonnieTestimonial.module.css
+│ │ └── Footer.module.css
+│ ├── assets/
+│ │ ├── logo.png
+│ │ ├── backgroundImage.jpg
+│ │ ├── desk1.png, desk2.png
+│ │ ├── flower.png, flower2.png
+│ │ ├── feedback1.png, feedback2.png
+│ │ └── search.png, bag.png, arrow.png
+│ ├── App.js
+│ └── index.js
+├── package.json
+└── README.md
+
+```
+---
+## 🧩 **Available Components**
+| Component              | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `Navbar.js`            | Top navigation bar with logo and icons   |
+| `HeroSection.js`       | Introductory banner with main visuals    |
+| `ProductSection.js`    | Section displaying plant collections     |
+| `IndoorPlantCard.js`   | Reusable card for plant items            |
+| `DeskDecorations.js`   | Decorative plant displays                |
+| `OurBest.js`           | Highlights best plant collections        |
+| `CustomerReview.js`    | Shows customer feedback                  |
+| `RonnieTestimonial.js` | Specific testimonial section             |
+| `TopSellingPlants.js`  | Displays most popular plants             |
+| `Footer.js`            | Page footer with contact and social info |
+| `Button.js`            | Reusable button component                |
+
+---
+## 🖋️ Fonts Used
+
+This project uses the following Google Fonts:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+
+---
+
+## 👨‍💻 Author
+
+**MO Aslam Khan**  
+📧 **Email:** [khanaslampathan142@gmail.com](mailto:khanaslampathan142@gmail.com)  
+🌐 **GitHub:** [https://github.com/AslamKhanpathan142/](https://github.com/AslamKhanpathan142)  
+💼 **Portfolio:** [your-portfolio-link.com](https://portfolio-vert-six-50.vercel.app/)
+
+---
+
+> Built with ❤️ by Mo Aslam Khan using React.js
+
