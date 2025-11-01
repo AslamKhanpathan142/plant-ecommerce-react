@@ -5,7 +5,7 @@
 ---
 
 ## 🚀 **Live Demo**
-**Live URL:** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)  
+**Live URL:** [https://plant-ecommerce-react-one.vercel.app/](https://plant-ecommerce-react-one.vercel.app/)  
 
 ---
 
@@ -36,6 +36,13 @@
 - CSS Modules  
 - React Icons
 - Tailwind CSS
+
+## 📱 **Responsive Breakpoints**
+**The website is optimized for all screen sizes:**
+- Desktop: 1200px and above
+- Tablet: 768px - 1199px
+- Mobile: 480px - 767px
+- Small Mobile: Below 480px
 
 ### **Development**
 - Create React App Using Vite 
